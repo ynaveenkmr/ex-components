@@ -1,7 +1,7 @@
 import React,{ useState} from 'react'
 import Count from './Count'
 import Title from './Titile'
-import Button from './Button'
+import CustButton from './CustButton'
 
 
 function UseCallBack(){
@@ -19,9 +19,9 @@ function UseCallBack(){
 <div>
 <Title />
 <Count text="Age" Count={age}/>
-<Button handleClick={ageIncrement}>Age</Button>
+<CustButton handleClick={ageIncrement}>Age</CustButton>
 <Count text="Salary" Count={salary}/>
-<Button handleClick={salaryIncrement}>Salary</Button>
+<CustButton handleClick={salaryIncrement}>Salary</CustButton>
 </div>
     </>
   )

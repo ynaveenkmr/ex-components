@@ -1,6 +1,6 @@
 import React from "react";
 
-function Button({ handleClick, Children }) {
+function CustButton({ handleClick, Children }) {
   console.log("Rendering Button ", Children);
   return (
     <div>
@@ -9,4 +9,4 @@ function Button({ handleClick, Children }) {
   );
 }
 
-export default Button;
+export default CustButton;

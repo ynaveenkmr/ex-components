@@ -4,7 +4,7 @@ function CustButton({ handleClick, Children }) {
   console.log("Rendering Button ", Children);
   return (
     <div>
-      <Button onClick={handleClick}>{Children}</Button>
+      <CustButton onClick={handleClick}>{Children}</CustButton>
     </div>
   );
 }

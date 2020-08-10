@@ -3,7 +3,11 @@ import React from 'react'
 function Title(){
   console.log('Rendering Title')
   return(
-    <div><hr /><u>useCallBack Hook</u></div>
+    <div>
+    <hr />
+    <p>useCallBack & React.memo will stop unwatted re-render of other components</p>
+    <u>useCallBack Hook</u>
+    </div>
   )
 }
 

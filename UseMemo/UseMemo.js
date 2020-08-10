@@ -51,8 +51,9 @@ function UseMemo() {
         <div>
 
         <hr/>
-        <span>First remove comment for Counter1_IsEven</span>
-        <h6><b>useMemo</b> is used to apply any method(delay) to specific element only then that element can only effected for example counter1 has delay method if i dont use useMemo then delay will effect other onClick functions also for more clarification remove commented eleemnts and see or see the difference while clicking on both the counter buttons couter1 will be some what delay compare to counter2</h6>
+        <p>First remove comment for Counter1_IsEven</p>
+        <p>simple it stop unwanted component rendering</p>
+        <h6><b>useMemo</b> is used to apply any method(delay) to specific element only then that element can only effected.  for example counter1 has delay method if i dont use useMemo then delay will effect other onClick functions also for more clarification remove commented eleemnts and see or see the difference while clicking on both the counter buttons couter1 will be some what delay compare to counter2</h6>
         
           <button onClick={increment1}>Counter1: {counter1}</button>
           <span>{Counter1_IsEven ? 'Even' : 'Odd'}</span>

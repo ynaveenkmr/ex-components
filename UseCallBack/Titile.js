@@ -3,8 +3,8 @@ import React from 'react'
 function Title(){
   console.log('Rendering Title')
   return(
-    <div>useCallBack Hook</div>
+    <div><hr /><u>useCallBack Hook</u></div>
   )
 }
 
-export default Title
+export default React.memo(Title)

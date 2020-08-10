@@ -9,4 +9,4 @@ function CustButton({ handleClick, children }) {
   );
 }
 
-export default CustButton;
+export default React.memo(CustButton);

@@ -18,9 +18,9 @@ function UseCallBack(){
     <>
 <div>
 <Title />
-<Count text="Age" Count={age}/>
+<Count text="Age" count={age}/>
 <CustButton handleClick={ageIncrement}>Age</CustButton>
-<Count text="Salary" Count={salary}/>
+<Count text="Salary" count={salary}/>
 <CustButton handleClick={salaryIncrement}>Salary</CustButton>
 </div>
     </>

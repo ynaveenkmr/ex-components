@@ -1,10 +1,10 @@
 import React from "react";
 
-function CustButton({ handleClick, Children }) {
-  console.log("Rendering Button ", Children);
+function CustButton({ handleClick, children }) {
+  console.log("Rendering Button ", children);
   return (
     <div>
-      <CustButton onClick={handleClick}>{Children}</CustButton>
+      <button className="btn-primary btn-sm" onClick={handleClick}>{children}</button>
     </div>
   );
 }

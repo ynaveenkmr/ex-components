@@ -12,6 +12,8 @@ const UseParams = React.lazy(()=> import('./UseParams/UseParams'));
 const UseLocation = React.lazy(()=> import('./UseLocation/UseLocation'));
 const UseMemo = React.lazy(()=> import('./UseMemo/UseMemo'))
 const UseCallBack = React.lazy(()=> import('./UseCallBack/UseCallBack'))
+const UseRef = React.lazy(()=> import('./UseRef/UseRef'))
+
 
 
 
@@ -32,6 +34,7 @@ const NavRouter=()=>{
       <Link to="/UseLocation" className="link">UseLocation </Link>
       <Link to="/UseMemo" className="link">UseMemo </Link>
       <Link to="/UseCallBack" className="link">UseCallBack </Link>
+      <Link to="/UseRef" className="link">UseRef </Link>
   <Route exact path="/" component={Home} />  
   <Route path="/Home" component={Home} />  
   <Route path="/Card" component={Card} />  
@@ -40,6 +43,7 @@ const NavRouter=()=>{
   <Route path="/Login" component={Login} /> 
   <Route path="/UseMemo" component={UseMemo} />
   <Route path="/UseCallBack" component={UseCallBack} />
+  <Route path="/UseRef" component={UseRef} />
   {/* when below redirect tag is there useParams is not working check more by removing it*/}
   {/*<Route path="/UseParams/:fname" component={UseParams} /> */} 
 {/*End of useParams*/}

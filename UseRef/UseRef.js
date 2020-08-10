@@ -1,17 +1,14 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
+import ClassTimer from "./ClassTimer";
+import Simple_UseRef from "./Simple_UseRef";
+import HookTimer from "./HookTimer";
 
-function UseRef(){
-const inputRef = useRef(null)
-
-useEffect(() => {
-inputRef.current.focus()
-},[])
-
+function UseRef() {
   return (
-    <div>
-     <input type="text" ref={inputRef} />
-    </div>
+    <>
+      <ClassTimer />
+      <HookTimer />
+      <Simple_UseRef />
+    </>
   );
 }
-
-export default Test;

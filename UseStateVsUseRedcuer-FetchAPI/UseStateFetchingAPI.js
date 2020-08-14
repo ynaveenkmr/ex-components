@@ -3,7 +3,7 @@ import axios from 'axios'
 import UseReducerFetchingAPI from './UseReducerFetchingAPI'
 
 function UseStateFetchingAPI(){
-  const [post, setPost] = useState([{}])
+  const [post, setPost] = useState({})
   const [load, setLoad] = useState(true)
   const [error, setError] = useState('')
 

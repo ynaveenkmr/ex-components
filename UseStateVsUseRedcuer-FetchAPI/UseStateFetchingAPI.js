@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react'
 import axios from 'axios'
+import UseReducerFetchingAPI from './UseReducerFetchingAPI'
 
 function UseStateFetchingAPI(){
   const [post, setPost] = useState([{}])
@@ -23,9 +24,14 @@ useEffect(() => {
   return(
     <>
     <hr />
+    <h2>useState Vs useReducer</h2>
     <h4><u>useState Fetching API</u></h4>
      {load? 'loading...':post.title}
      {error?error:null}
+
+    <h4><u>Using Reducer fetching api</u></h4>
+    <UseReducerFetchingAPI />
+
     </>
   )
 }

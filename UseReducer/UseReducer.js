@@ -1,5 +1,6 @@
 import React, { useReducer } from "react";
 import UseReducer2 from './UseReducer2'
+import UsingMultipleReducer from './UsingMultipleReducer'
 
 const initialstate = 0;
 const reducer = (state, action) => {
@@ -29,8 +30,13 @@ function UseReducer() {
       <button onClick={() => dispatch("reset")}>Reset</button>
       <hr />
 
-      <h6><u>Another Example</u></h6>
+      <h4><u>Another complex state managing Example using reducer</u></h4>
       <UseReducer2 />
+
+      <hr />
+
+     <h4><u>Multiple Reducer</u></h4>
+      <UsingMultipleReducer />
     </>
   );
 }

@@ -16,6 +16,7 @@ const UseRef = React.lazy(()=> import('./UseRef/UseRef'))
 const CustomHooks = React.lazy(()=> import('./CustomHooks/CustomHooks'))
 const UseReducer = React.lazy(() => import('./UseReducer/UseReducer'))
 const UseStateFetchingAPI = React.lazy(() => import('./UseStateVsUseRedcuer-FetchAPI/UseStateFetchingAPI'))
+const AccordionApp = React.lazy(() => import('./Accordion/AccordionApp'))
 
 const NavRouter=()=>{
   return(
@@ -36,7 +37,7 @@ const NavRouter=()=>{
       <Link to="/CustomHooks" className="link">CustomHooks </Link>
       <Link to="/UseReducer" className="link">useReducer</Link>
       <Link to="/UseStateFetchingAPI" className="link">UseState-Vs-UseRedcuer-FetchAPI</Link>
-
+      <Link to="/AccordionApp" className="link">Accordion</Link>
   <Route exact path="/" component={Home} />  
   <Route path="/Home" component={Home} />  
   <Route path="/Card" component={Card} />  
@@ -49,6 +50,7 @@ const NavRouter=()=>{
   <Route path="/CustomHooks" component={CustomHooks} />
   <Route path="/UseReducer" component={UseReducer} />
   <Route path="/UseStateFetchingAPI" component={UseStateFetchingAPI} />
+  <Route path="/AccordionApp" component={AccordionApp} />
   {/* when below redirect tag is there useParams is not working check more by removing it*/}
   {/*<Route path="/UseParams/:fname" component={UseParams} /> */} 
 {/*End of useParams*/}
